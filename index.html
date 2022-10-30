@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minion | Talk</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+        body{
+            margin: 0;
+            font-family: "Montserrat", sans-serif;
+            background: url("minions-pic.jpg") no-repeat center;
+            background-size: cover;
+        }
+        .heading{
+            background-color: yellow;
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            padding: 2rem;
+            
+        }
+        #inp-txt{
+            height: 15vh;
+            width: 25%;
+            display: block;
+            margin: 2% auto;
+
+        }
+        #btn{
+            padding: 1rem;
+            border-radius: 0.6rem;
+            width: 10%;
+            background: yellow;
+            font-size: 1rem;
+            font-weight: bold;
+            display: block;
+            margin:auto;
+            cursor: pointer;
+        }
+        #output{
+            border: 2px solid black;
+            height: 15vh;
+            width: 25%;
+            display: block;
+            margin: 2% auto;
+            background-color: white;
+
+        }
+        footer{
+            text-align: center;
+            width: 80%;
+            margin: auto;
+            background-color: yellow;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+        <h1 class="heading"> Minion Talks</h1>
+
+        <textarea placeholder="Enter Text to Get it Translated to Minions Language" id="inp-txt"></textarea>
+
+        <button id="btn">Translate</button>
+        <div id="output"></div>
+
+    <footer> 
+        <h2>About</h2>
+        <p class="about">Are you a fan of minions? Did you know that the gibberish they say is an actual language. Use the translator to convert your text from English to Minion speak or Banana language.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
